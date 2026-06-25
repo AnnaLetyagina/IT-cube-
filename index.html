@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>IT-куб | Белоярский — передовая инициатива</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="logo-icon">
+                    <img src="images/EW9cPX9Lp6z3U33OFtg2QKz5jcXlgzX9CFgXTh2tcBy4gh-mZ9PfhYWpMKE3bPXpgK8rinhvy49ozfqRQHvvfGoc.jpg" alt="IT-куб Белоярский логотип">
+                </span>
+                <div>
+                    <h1>IT-куб</h1>
+                    <p>Белоярский</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#main" class="active">Главная</a></li>
+                    <li><a href="#directions">Направления</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#intensives">Интенсивы</a></li>
+                    <li><a href="#news">Новости</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ГЛАВНАЯ секция -->
+        <section id="main" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="hero-badge">Передовая инициатива</span>
+                    <h2>Формируем <span class="accent">новое поколение</span> IT-специалистов</h2>
+                    <p>От 5 до 17 лет. Креативность + технологии. Глубокое погружение в мир программирования, робототехники и цифрового творчества.</p>
+                    <div class="hero-buttons">
+                        <a href="#data" class="btn-primary">Записать ребёнка</a>
+                        <a href="#directions" class="btn-outline">Все направления</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong>300+</strong> учеников</div>
+                        <div><strong>8</strong> лабораторий</div>
+                        <div><strong>12</strong> педагогов-практиков</div>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="images/B8KYX871KNqqU78LSwhqTCyoP3g-4gdhmhkyrIzoh6QZfkKFDeoa90s1Crzf4jlJ_bb-ig7C6vmIj94mmOp5qfpj.jpg" alt="IT-куб Белоярский баннер">
+                </div>
+            </div>
+        </section>
+
+        <!-- НАПРАВЛЕНИЯ -->
+        <section id="directions" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">🚀 Наши направления</h2>
+                <div class="directions-grid">
+                    <div class="dir-card">🔸 Моделирование электросхем</div>
+                    <div class="dir-card">🔹 Программирование на Python</div>
+                    <div class="dir-card">🔸 VR/AR-разработка</div>
+                    <div class="dir-card">🔹 Системное администрирование</div>
+                    <div class="dir-card">🔹 Логика и алгоритмика</div>
+                    <div class="dir-card">🔸 В стране робототехники</div>
+                    <div class="dir-card">🔹 Логика и алгоритмика: от А до Я</div>
+                    <div class="dir-card">🔸 В стране робототехники c Lego WeDo</div>
+                    <div class="dir-card">🔹 Основы компьютерной грамотности</div>
+                </div>
+                <p class="center-meta">Каждое направление — реальные проекты, хакатоны и портфолио к концу обучения.</p>
+            </div>
+        </section>
+
+        <!-- ГАЛЕРЕЯ С АЛЬБОМАМИ -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">📸 Фотогалерея IT-куба</h2>
+                <p class="subhead">Наши яркие моменты — вдохновляйтесь и присоединяйтесь!</p>
+                
+                <!-- Кнопки фильтрации по альбомам -->
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">Все фото</button>
+                    <button class="filter-btn" data-filter="robotics">🤖 Робототехника</button>
+                    <button class="filter-btn" data-filter="events">🎟️ Мероприятия</button>
+                    <button class="filter-btn" data-filter="kids">🏆 Наши достижения</button>
+                </div>
+
+                <!-- Сетка галереи -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Альбом 1: Робототехника -->
+                    <div class="gallery-item" data-category="robotics">
+                        <img src="images\y3jminWa_ZYiWGI54DxBxphu32lAPl0nGJt8-RNlVZv5466MJTJ8nVS86cqoPwv4ZxYs6rBcGqyuQIhbAtyMdWR3.jpg" alt="Соревнования роботов">
+                        <div class="gallery-overlay">
+                            <span>🏆 Соревнования роботов по робототехнике</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="robotics">
+                        <img src="images\zg9xYWMYAX_5L6isEM14SKnqKB3r4bxOw-EKBHxZdmxcWnnbk0WlJLPJ8AHf6UMNb7C1NaGYOEyomfleIXOXCc9O.jpg" alt="Электронная мастерская">
+                        <div class="gallery-overlay">
+                            <span>🔧 Сборка Электронного конструктора</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="robotics">
+                        <img src="images\ANDoUeQ1iqNuVnqxpBuUhu8rHl7p3Qn26SynT1CV1vZOVgejJbQ8aakJSP4Nu6Um6s5M-DY7j_vMf3jQ21ct1uaQ.jpg" alt="Презентация робота">
+                        <div class="gallery-overlay">
+                            <span>🤖 Представление роботов</span>
+                        </div>
+                    </div>
+
+                    <!-- Альбом 2: Мероприятия -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="images\gwYN2hhAVCKmDoU7isUKbTXux9DySG7IjVqBeuK0fPRY9eXIIiGQVx8oGVSLfWTnz03hXJfEoJksLI95ITxcgkmu.jpg" alt="Летний интенсив">
+                        <div class="gallery-overlay">
+                            <span>☀️ Летний Интенсив</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <img src="images\hbYE2u5KdKdKH_PGP15VB0akUa-RgGRUr4xHkAuCcMt_QDlVhk5qGIFoz-OwiIOQUhJlWiRbpnMwKtF-WYFOyLOS.jpg" alt="Хакатон">
+                        <div class="gallery-overlay">
+                            <span>⚡ Экскурсии</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <img src="images\vbJ9N8LN527jZXPSYtzyZmDvYWYVDudYYgpaABuIuWr1wJiz5NK__v89YclEqR_1bBIyAYQkLk-_7JJwYUoV2tpD.jpg" alt="Выпускной">
+                        <div class="gallery-overlay">
+                            <span>🎓 Вручение сертификатов</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <img src="images\z7ZVA0ujly1BQonWAfA1cUqzsT0B7bVXpuS6tNojIaAVdciO9sVDCgowY9M63A0ok-Eqm7QDfUuiIThcyUu9JnuX.jpg" alt="Открытый урок">
+                        <div class="gallery-overlay">
+                            <span>👨‍🏫 Открытое занятие</span>
+                        </div>
+                    </div>
+
+                    <!-- Альбом 3: Наши друзья -->
+                    <div class="gallery-item" data-category="kids">
+                        <img src="images\6xYxbX8YbMyfG0bYnCCSfQfV0M2EALY5T6eStpBhD6A95_W98VeDPQo8ix6Pv3RguU7r1r4_bAdUameTPaYXt3cF.jpg" alt="Юные программисты">
+                        <div class="gallery-overlay">
+                            <span>⭐ Наша гордость</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="kids">
+                        <img src="images\lztsqAkmKzhtqily7yk02780uq1X13ibUUHSbUIJ_gwoTsGsZvCSoQ2wr1IEu3DKFnxdioTJdFW26Vi4wH62gQnx.jpg" alt="Работа в команде">
+                        <div class="gallery-overlay">
+                            <span>👥 Командный проект</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="kids">
+                        <img src="images\-7T12Mqd0txtf8O0eWdGP83Ya8Ql2vh7NxMWW7HB1lgDIt13enqAXoP2pV1HDHXWQ_VPffDXuQUoR5GXgrt5SoNA.jpg" alt="Первые шаги в IT">
+                        <div class="gallery-overlay">
+                            <span>🎮 Создаём игры в Scratch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Модальное окно для просмотра фото -->
+                <div id="lightbox" class="lightbox">
+                    <span class="close-lightbox">&times;</span>
+                    <img class="lightbox-content" id="lightboxImg">
+                    <div id="lightboxCaption" class="lightbox-caption"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section id="reviews" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">💬 Отзывы родителей и учеников</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-text">«Сын ходит на Python уже полгода. Педагоги — огонь! Ребёнок сам делает игры. Спасибо IT-кубу!»</div>
+                        <div class="review-author">— Елена, мама Артёма (12 лет)</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-text">«Дочь в восторге от VR/AR. Показала нам свою первую виртуальную комнату. Здорово, что есть такое в Белоярском.»</div>
+                        <div class="review-author">— Дмитрий, отец Софии (14 лет)</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-text">«Логика и алгоритмика с Lego WeDo — просто сказка. Ребёнок 7 лет ждёт каждое занятие. Развивает и мышление, и моторику.»</div>
+                        <div class="review-author">— Анна, бабушка Мирона</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ИНТЕНСИВЫ -->
+        <section id="intensives" class="section">
+            <div class="container">
+                <h2 class="section-title">⚡ Интенсивы на каникулах</h2>
+                <div class="intensives-flex">
+                    <div class="int-card summer">☀️ Летний IT-лагерь<br><small>Июнь-август / 5 дней погружения</small></div>
+                    <div class="int-card winter">❄️ Зимний хакатон<br><small>Декабрь-январь / Создаём проект под наставником</small></div>
+                    <div class="int-card autumn">🍂 Осенний марафон<br><small>Октябрь / Схемотехника + Python-спринт</small></div>
+                </div>
+                <div class="center-meta">
+                    <a href="#enroll" class="btn-outline">Записаться на интенсив</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- НОВОСТИ -->
+        <section id="news" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">📰 Новости IT-куба</h2>
+                <div class="news-list">
+                    <article class="news-item">
+                        <span class="news-date">15 марта 2026</span>
+                        <h3>Открыт набор на «Системное администрирование» для подростков 14+</h3>
+                        <p>Первое занятие — уже 1 апреля. В программе: сети, Linux, первая серверная практика.</p>
+                    </article>
+                    <article class="news-item">
+                        <span class="news-date">2 марта 2026</span>
+                        <h3>Наши ребята взяли 3 место на региональном чемпионате по робототехнике</h3>
+                        <p>Сборная Lego WeDo представила проект «Умная теплица».</p>
+                    </article>
+                    <article class="news-item">
+                        <span class="news-date">20 февраля 2026</span>
+                        <h3>Летний интенсив — раннее бронирование со скидкой до 25%</h3>
+                        <p>Успейте записаться до 30 апреля. Количество мест ограничено.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="logo" style="margin-bottom: 1rem;">
+                    <span class="logo-icon">
+                        <img src="images/EW9cPX9Lp6z3U33OFtg2QKz5jcXlgzX9CFgXTh2tcBy4gh-mZ9PfhYWpMKE3bPXpgK8rinhvy49ozfqRQHvvfGoc.jpg" alt="IT-куб Белоярский логотип" style="width: 40px; height: 40px;">
+                    </span>
+                    <div>IT-куб Белоярский</div>
+                </div>
+                <p>Передовая инициатива для детей от 5 до 17 лет. Формируем будущее IT.</p>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>📍 квартал Спортивный, 1, Белоярский<br>📞 +7 (34670) 5-15-57<br>✉️ itcubebel</p>
+            </div>
+            <div class="social-block">
+                <h4>Соцсети</h4>
+                <div class="qr-container">
+                    <a href="https://vk.com/itcubebel" target="_blank" rel="noopener">
+                        <img src="images/qrcod_f8WM.png" alt="QR-код для перехода в VK сообщество IT-куб Белоярский" class="qr-code">
+                    </a>
+                    <p class="qr-text">Наведите камеру или нажмите на QR-код</p>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>IT-куб Белоярский © 2026 — С любовью к технологиям и детям</p>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        }
+
+        // Плавный скролл
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (navLinks.classList.contains('show')) navLinks.classList.remove('show');
+                }
+            });
+        });
+
+        // Обработка формы
+        const form = document.getElementById('childForm');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('✅ Спасибо! Заявка принята. Мы скоро свяжемся с вами.');
+                form.reset();
+            });
+        }
+
+        // ========== ГАЛЕРЕЯ: ФИЛЬТРАЦИЯ ==========
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filterValue = btn.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 200);
+                    }
+                });
+            });
+        });
+
+        // ========== ЛАЙТБОКС ==========
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const closeLightbox = document.querySelector('.close-lightbox');
+        
+        function openLightbox(imgSrc, caption) {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = imgSrc;
+            lightboxCaption.textContent = caption;
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightboxFunc() {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const parent = img.parentElement;
+                const overlaySpan = parent.querySelector('.gallery-overlay span');
+                const caption = overlaySpan ? overlaySpan.textContent : 'Момент из жизни IT-куба';
+                openLightbox(img.src, caption);
+            });
+        });
+        
+        if (closeLightbox) closeLightbox.addEventListener('click', closeLightboxFunc);
+        if (lightbox) lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightboxFunc();
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox && lightbox.style.display === 'flex') {
+                closeLightboxFunc();
+            }
+        });
+        
+        // Устанавливаем начальное отображение
+        galleryItems.forEach(item => {
+            item.style.display = 'block';
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
